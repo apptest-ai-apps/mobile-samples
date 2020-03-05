@@ -14,9 +14,6 @@ jobs:
         java-version: '1.8'
     - name: use xcode 11.3.1
       run: sudo xcode-select -switch /Applications/Xcode_11.3.1.app
-    - name: check lipo
-      run: |
-        lipo
     - name: nuget restore
       working-directory: ./StandardControls
       run: nuget restore 
