@@ -17,6 +17,8 @@ jobs:
     - name: check lipo
       run: |
         ls -l /Applications/Xcode_11.3.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo
+        /Applications/Xcode_11.3.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo
+        lipo
     - name: nuget restore
       working-directory: ./StandardControls
       run: nuget restore 
