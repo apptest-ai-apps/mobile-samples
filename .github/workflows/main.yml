@@ -27,8 +27,8 @@ jobs:
         cd AndroidStandardControls
         msbuild "AndroidStandardControls.csproj" "/t:SignAndroidPackage" "/p:Configuration=Release" "/p:AndroidKeyStore=true" "/p:AndroidSigningKeyAlias=${ALIAS}" "/p:AndroidSigningKeyPass=${KEY_PASSWORD}" "/p:AndroidSigningKeyStore=${KEY_STORE_FILE}" "/p:AndroidSigningStorePass=${KEY_STORE_PASSWORD}"
     - name: Test app on apptest.ai
-      uses: forcemax/apptestai-test@v1
+      uses: forcemax/apptestai-test@v1.2
       with:
         access_key: ${{ secrets.APPTEST_AI_ACCESS_KEY }}
-        project_id: 1134
+        project_id: 1143
         binary_path: StandardControls/AndroidStandardControls/bin/Release/com.xamarin.samples.standardcontrols-Signed.apk
