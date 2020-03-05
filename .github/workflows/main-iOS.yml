@@ -16,8 +16,7 @@ jobs:
       run: sudo xcode-select -switch /Applications/Xcode_11.3.1.app
     - name: check lipo
       run: |
-        ls -l /Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/bin/lipo
-        ls -l /Applications/Xcode_11.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk
+        ls -l /Applications/Xcode_11.3.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo
     - name: nuget restore
       working-directory: ./StandardControls
       run: nuget restore 
