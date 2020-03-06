@@ -38,7 +38,7 @@ jobs:
         MATCH_KEYCHAIN_PASSWORD: ${{ secrets.MATCH_KEYCHAIN_PASSWORD }}
       run: fastlane beta 
     - name: Test app on apptest.ai
-      uses: forcemax/apptestai-test@v1.2
+      uses: forcemax/apptestai-test@v1
       with:
         access_key: ${{ secrets.APPTEST_AI_ACCESS_KEY }}
         project_id: 1144
