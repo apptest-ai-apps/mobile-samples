@@ -65,7 +65,7 @@
     <CodesignKey>iPhone Developer</CodesignKey>
     <MtouchI18n></MtouchI18n>
     <MtouchUseArmv7>false</MtouchUseArmv7>
-    <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <MtouchArch>ARM64</MtouchArch>
     <MtouchHttpClientHandler>NSUrlSessionHandler</MtouchHttpClientHandler>
   </PropertyGroup>
   <ItemGroup>
