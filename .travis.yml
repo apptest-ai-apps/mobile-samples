@@ -30,7 +30,7 @@ jobs:
       export JAVA_HOME="/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home"
       export PATH="$JAVA_HOME/bin:$PATH"
       brew cask install android-sdk > /dev/null
-      yes | /usr/local/share/android-sdk/tools/bin/sdkmanager --licenses > /dev/null
+      yes | /usr/local/share/android-sdk/tools/bin/sdkmanager --licenses
       /usr/local/share/android-sdk/tools/bin/sdkmanager --sdk_root=/usr/local/share/android-sdk "platforms;android-28" "build-tools;28.0.3" "platform-tools" "ndk-bundle" > /dev/null
       brew cask install xamarin xamarin-android visual-studio
     before_script: |
